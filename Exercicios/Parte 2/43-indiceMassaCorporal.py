@@ -9,13 +9,15 @@ Desenvolva uma lógica que leia peso e a altura de uma pessoa, calcule seu IMC e
 
 p = float(input('Peso:'))
 a = float(input('Altura:'))
-imc = p/(a * a)
+imc = p/(a ** 2)
 
 if imc < 18.55:
-    print(f'Abaixo do peso, seu IMC: {imc}')
-elif imc <= 25:
-    print(f'Peso ideal, seu IMC: {imc}')
-elif imc <= 30:
-    print(f'Sobrepeso, seu IMC: {imc}')
+    print(f'Abaixo do peso, seu IMC: {imc:.2f}')
+elif imc < 25:
+    print(f'Peso ideal, seu IMC: {imc:.2f}')
+elif imc < 30:
+    print(f'Sobrepeso, seu IMC: {imc:.2f}')
 elif imc <= 40:
-    print(f'Obesidade mórbida, seu IMC: {imc}')
+    print(f'Obesidade, seu IMC: {imc:.2f}')
+else:
+    print(f'Obesidade mórbida, cuidado, seu IMC: {imc:.2f}')

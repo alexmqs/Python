@@ -5,8 +5,8 @@ Escreva um prograna que leia um número inteiro qualquer e peça para o usuário
 - 3 para hexadecimal
 '''
 print('Menu de escolha:')
-e = int(input('1 - para binário\n2 - para octal\n3 - para hexadecimal\nQual você escolhe? '))
-n = int(input('Digite um número: '))
+e = int(input('1 - para binário\n2 - para octal\n3 - para hexadecimal\nSua opção? '))
+n = int(input('Digite um numero: '))
 b = bin(n).replace('0b', '')
 o = oct(n).replace('0o', '')
 h = hex(n).replace('0x', '')

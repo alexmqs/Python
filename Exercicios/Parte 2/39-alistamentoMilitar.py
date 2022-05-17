@@ -5,18 +5,26 @@ Faça um programa que leia o ano de nascimento de um jovem e informe, de acordo 
 - Se já passou do tempo do alistamento
 Seu programa também deverá mostrar o tempo que falta ou que passou do prazo.
 '''
-from datetime import date, datetime
-an = int(input('Digite seu ano de nascimento: '))
-calIdade = date.today().year - an
-idadeAlis = 18
-falta = idadeAlis - calIdade
+from datetime import date
 
-if calIdade < idadeAlis:
+anoNasc = int(input('Digite seu ano de nascimento: '))
+anoAtual = date.today().year
+idade = anoAtual - anoNasc
+idadeAlistamento = 18
+falta = idadeAlistamento - idade
+anoAli = anoNasc + idadeAlistamento
+jaFoi = anoAtual - anoAli
+print(f'Quem nasceu em {anoNasc} tem {idade} anos em {anoAtual}')
+
+if idade < idadeAlistamento:
     if falta == 1:
-        print(f'Falta {falta} ano para você servir no quartel.')
+        print(f'Falta {falta} ano para ele servir no quartel.')
+        print(f'Você deve se alistar em {anoAli}')
     else:
-        print(f'Falta {falta} anos para você servir no quartel.')
-elif calIdade == idadeAlis:
-    print(f'Este ano você terá que ir no quartel.')
+        print(f'Falta {falta} anos para ele servir no quartel.')
+        print(f'Você deve se alistar em {anoAli}')
+elif idade == idadeAlistamento:
+    print(f'Este ano de {anoAtual} ele terá que ir no quartel.')
 else:
     print('Você não tem idade para o alistamento.')
+    print(f'Seu alistamento foi há {jaFoi} anos, ou seja em {anoAli}')

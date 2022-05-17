@@ -9,20 +9,21 @@ A confederação nacional de natação precisa de um programa que leia o ano de 
 from datetime import date
 
 
-an = int(input('Digite o ano de nascimento: '))
-calId = date.today().year - an
+ano = int(input('Digite o ano de nascimento: '))
+anoAtual = date.today().year
+idade = anoAtual - ano
 m = 9
 i = 14
 j = 19
 s = 20
-
-if calId <= m:
+print(f'O atleta tem {idade} ano(s)')
+if idade <= m:
     print('Mirim')
-elif calId <= i:
+elif idade <= i:
     print('Infantil')
-elif calId <= j:
+elif idade <= j:
     print('Junior')
-elif calId <= s:
+elif idade <= s:
     print('Sênior')
 else:
     print('Master')

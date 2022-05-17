@@ -8,11 +8,11 @@ Crie um programa que leia duas notas de um aluno e calcule sua média, mostrando
 n1 = float(input('Digite a 1ª nota: '))
 n2 = float(input('Digite a 2ª nota: '))
 # cálculo média
-m = n1 + n2 / 2
-
+m = (n1 + n2) / 2
+print(f'As notas {n1:.2f} e {n2:.2f} tem média {m:.2f}')
 if m < 5.0:
     print('Reprovado!!!')
-elif m > 5.0 and m < 7.0:
+elif m >= 5.0 and m < 7.0:
     print('Recuperação!!!')
 else:
     print('Aprovado!!!')

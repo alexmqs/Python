@@ -8,8 +8,8 @@ n1 = int(input('Digite o 1º número:'))
 n2 = int(input('Digite o 2º número:'))
 
 if n1 > n2:
-    print(f'O número {n1} é maior que o {n2}.')
+    print(f'O 1º número é maior.')
 elif n1 < n2:
-    print(f'O número {n2} é maior que o {n1}.')
+    print(f'O 2º número é maior.')
 else:
-    print(f'Os valores {n1} e {n2} são iguais.')
+    print(f'Os dois números são iguais.')
