@@ -43,6 +43,7 @@ print('-'*20, 'Banco Virtual', '-'*20)
 valorSaque = int(input('Qual o valor do saque: R$'))
 valorCed = 50
 totCedSacadas = 0
+print(f'Você sacou R${valorSaque:.2f}')
 
 while True:
     # retirando cédulas
@@ -63,4 +64,4 @@ while True:
         if valorSaque == 0:
             break
 print(f'-'*20, 'Saindo do Banco', '-'*20)
-print(f'Você sacou R${valorSaque:.2f}')
+
