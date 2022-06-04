@@ -22,7 +22,7 @@ while True:
     # somando o total
     t += p
     # mais de R$10.00
-    if p > 10:
+    if p > 1000:
         maior10 += 1
 
     # mais barato e mais caro
