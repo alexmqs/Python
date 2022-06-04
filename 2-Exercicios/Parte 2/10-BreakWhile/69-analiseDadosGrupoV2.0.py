@@ -22,7 +22,7 @@ while True:
         if cont in ('SN'):
             break
 
-    if i > 18:
+    if i >= 18:
         maior += 1
 
     if s == 'M':

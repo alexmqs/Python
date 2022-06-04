@@ -11,5 +11,4 @@ while True:
     else:
         s += n
         c += 1
-print(f'Soma {s}')
-print(f'Quantas números {c}')
+print(f'Soma dos {c} valores foi {s}!')
