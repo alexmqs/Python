@@ -1,3 +1,7 @@
+'''
+As tuplas são variáveis compostas e imutáveis que permitem armazenar vários valores em uma mesma estrutura
+acessíveis por chaves individuais.
+'''
 # tupla, mantém valores na variável, esses valores não podem ser trocados, ou seja, são imutáveis
 lanche = ('hambúrguer', 'suco', 'pizza', 'pudim', 'batata frita')
 
