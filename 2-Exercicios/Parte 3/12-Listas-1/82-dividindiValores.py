@@ -18,6 +18,7 @@ while True:
         if p in 'SN':
             break
         else:
+            
             print('Somente Sim ou Não')
     # saindo
     if p == 'N':
