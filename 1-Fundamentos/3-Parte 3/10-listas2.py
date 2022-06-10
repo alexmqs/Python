@@ -49,3 +49,4 @@ for c in range(0, 3):
         men += 1
 # exibindo
 print(f'Temos {mai} maiores e {men} menores de idade.')
+
