@@ -37,16 +37,15 @@ for c in range(0, 3):
     l5.append(str(input('Nome:')))
     l5.append(int(input('Idade:')))
     l4.append(l5[:])
-    l4.clear()
+    l5.clear()
 # exibindo
 print(l4)
-for c in range(0, 3):
-    if i[0] >= 18:
-        print(f'{i[0]} é maior de idade.')
+for c in l4:
+    if c[1] >= 18:
+        print(f'{c[0]} é maior de idade.')
         mai += 1
     else:
-        print(f'{i[0]} é menor de idade.')
+        print(f'{c[0]} é menor de idade.')
         men += 1
 # exibindo
 print(f'Temos {mai} maiores e {men} menores de idade.')
-
